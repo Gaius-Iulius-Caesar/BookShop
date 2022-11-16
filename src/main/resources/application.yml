@@ -18,5 +18,5 @@ mybatis-plus:
 
 files:
   upload:
-    path: D:\JetBrains\SpringBootFiles\BookShop\files
-
+    path: D:\JetBrains\SpringBootFiles\BookShop\files\
+#    要不要最后加"\"?
