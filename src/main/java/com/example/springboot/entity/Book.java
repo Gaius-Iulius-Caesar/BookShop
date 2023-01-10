@@ -3,7 +3,9 @@ package com.example.springboot.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.io.Serializable;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import io.swagger.models.auth.In;
@@ -12,7 +14,7 @@ import lombok.Setter;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author WuSai
@@ -20,14 +22,14 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-  @TableName("sys_book")
+@TableName("sys_book")
 @ApiModel(value = "Book对象", description = "")
 public class Book implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-      @TableId(value = "id", type = IdType.AUTO)
-      private Integer id;
+    @TableId(value = "id", type = IdType.AUTO)
+    private Integer id;
 
     private String bookname;
 
@@ -41,7 +43,7 @@ public class Book implements Serializable {
 
     private String coverurl;
 
-    public void setNull(){
+    public void setNull() {
         this.id = null;
         this.bookname = "未知书目";
         this.author = null;

@@ -19,7 +19,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-  @TableName("sys_carousel")
+@TableName("sys_carousel")
 @ApiModel(value = "Carousel对象", description = "")
 public class Carousel implements Serializable {
 

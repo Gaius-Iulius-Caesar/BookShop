@@ -19,14 +19,14 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-  @TableName("sys_inventory")
+@TableName("sys_inventory")
 @ApiModel(value = "Inventory对象", description = "")
 public class Inventory implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-      @TableId(value = "id", type = IdType.AUTO)
-      private Integer id;
+    @TableId(value = "id", type = IdType.AUTO)
+    private Integer id;
 
     private Integer shopId;
 
